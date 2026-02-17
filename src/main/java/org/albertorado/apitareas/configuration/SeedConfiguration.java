@@ -21,7 +21,7 @@ public class SeedConfiguration {
         repo.findByKey(key).orElseGet(() -> {
             Estado e = new Estado();
             e.setKey(key);
-            e.setEstado(nombre); // si tu campo es "estado" como nombre visible
+            e.setEstado(nombre);
             return repo.save(e);
         });
     }
