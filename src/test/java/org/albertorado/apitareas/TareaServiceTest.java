@@ -11,7 +11,6 @@ import org.albertorado.apitareas.repository.TareaRepository;
 import org.albertorado.apitareas.service.TareaService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -21,10 +20,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
-import org.junit.jupiter.api.Disabled;
 
-@Disabled("Evitar levantar contexto/DB en unit tests")
-@SpringBootTest
+
 class TareaServiceTest {
 
     private TareaRepository tareaRepository;
